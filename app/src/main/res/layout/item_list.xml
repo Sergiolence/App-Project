@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
         android:layout_marginTop="2dp"
-        android:text="Button"
+        android:text="Eliminar"
         app:layout_constraintStart_toEndOf="@+id/itemDescripcio"
         app:layout_constraintTop_toTopOf="parent" />
 

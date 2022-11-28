@@ -16,7 +16,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="titol"
+            />
 
         <EditText
             android:id="@+id/subtitol_form"
@@ -25,7 +26,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="Name" />
+            android:hint="subtitol"
+            />
 
         <EditText
             android:id="@+id/descripcio_form"
@@ -34,7 +36,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="Name" />
+            android:hint="descripcio"
+            />
 
         <Button
             android:id="@+id/button_form"

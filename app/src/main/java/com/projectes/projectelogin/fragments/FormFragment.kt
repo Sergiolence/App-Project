@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import com.projectes.projectelogin.Clase
 import com.projectes.projectelogin.MainActivity
 import com.projectes.projectelogin.R
@@ -29,7 +30,8 @@ class FormFragment(dbHelper: DBHelper) : Fragment() {
         var btnDescripcio: Button = view.findViewById(R.id.button_form)
 
         btnDescripcio.setOnClickListener {
-            dbHelper.insertLlibre(Clase(txtTitol.text.toString(), txtSubtitol.text.toString(), txtDescripcio.text.toString()));
+            dbHelper.insertClase(Clase(id.toInt(),txtTitol.text.toString(), txtSubtitol.text.toString(), txtDescripcio.text.toString()));
+            Toast.makeText(context, "Contenido insertado", Toast.LENGTH_SHORT).show()
         }
 
         return view;

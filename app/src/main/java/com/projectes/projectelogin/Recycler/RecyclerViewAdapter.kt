@@ -6,9 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.projectes.projectelogin.Clase
 import com.projectes.projectelogin.R
+import com.projectes.projectelogin.fragments.ItemFragment
 
 class RecyclerViewAdapter(llistat: MutableList<Clase>, context: Context?): RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
     var llistat: MutableList<Clase> = llistat;
@@ -21,6 +23,13 @@ class RecyclerViewAdapter(llistat: MutableList<Clase>, context: Context?): Recyc
     }
     //Es on es posa la informació dels elements del list
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.itemView.setOnClickListener(object:View.OnClickListener{
+            override fun onClick(v: View?) {
+                val activity = v!!.context as AppCompatActivity
+                activity.supportFragmentManager.beginTransaction().replace(R.id.fragment_container, ItemFragment(llistat.get(position))).commit();
+            }
+        })
+
         holder.txtTitol.setText(llistat.get(position).getTitol());
         holder.txtSubtitol.setText(llistat.get(position).getSubtitol());
         holder.txtDescripcio.setText(llistat.get(position).getDescripcio());

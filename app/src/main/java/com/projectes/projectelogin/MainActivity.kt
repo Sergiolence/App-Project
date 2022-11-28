@@ -42,10 +42,6 @@ class MainActivity : AppCompatActivity() {
                 else -> {false}
             }
         }
-
-
-
-
     }
     override fun onDestroy() {
         dbHelper.close()

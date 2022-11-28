@@ -1,6 +1,6 @@
 package com.projectes.projectelogin
 
-class Clase(tit:String, subt:String, desc:String) {
+class Clase(val id:Int?,tit:String, subt:String, desc:String) {
     var titol = tit
     var subtitol = subt
     var descripcio = desc

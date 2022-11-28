@@ -30,7 +30,7 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, nul
         onCreate(db)
     }
 
-    fun insertLlibre(l: Clase) {
+    fun insertClase(l: Clase) {
         val values = ContentValues()
         values.put(COLUMN_NAME_TITOL, l.titol)
         values.put(COLUMN_NAME_SUBTITOL, l.subtitol)
@@ -47,7 +47,8 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, nul
             do {
                 llista.add(
                     Clase(
-                        cursor.getString(0),
+                        cursor.getInt(0),
+                        cursor.getString(1),
                         cursor.getString(2),
                         cursor.getString(3)
                     )
@@ -56,5 +57,9 @@ class DBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, nul
         }
         cursor.close()
         return llista
+    }
+    fun deleteAll() {
+        val db = this.writableDatabase
+        db.execSQL("DELETE FROM $TABLE_NAME")
     }
 }
