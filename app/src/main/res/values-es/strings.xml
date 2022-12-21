@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Projecte Login</string>
+    <string name="username">nombre</string>
+    <string name="password">contraseña</string>
+    <string name="eliminate">Eliminar</string>
+    <string name="eliminate_all">Eliminar todos</string>
+    <string name="home">Casita</string>
+    <string name="title">Titulo</string>
+    <string name="subtitle">Subtitulo</string>
+    <string name="description">Descripcion</string>
+    <string name="home_bottom">Inicio</string>
+    <string name="form_bottom">Formulario</string>
+    <string name="list_bottom">Lista</string>
+    <string name="settings_toolbar">Ajustes</string>
+    <string name="logout_toolbar">Cerrar sesión</string>
+    <string name="shared_eliminate">Eliminar Preferencias</string>
+</resources>

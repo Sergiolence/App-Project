@@ -15,29 +15,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="titol"
-            />
+            android:hint="@string/title"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/subtitol_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/subtitle"
             android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:hint="subtitol"
-            />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/descripcio_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/description"
             android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:hint="descripcio"
-            />
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/button_form"

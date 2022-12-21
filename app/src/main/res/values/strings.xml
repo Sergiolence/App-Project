@@ -1,10 +1,31 @@
 <resources>
     <string name="app_name">Projecte Login</string>
-    <string name="login_button">Login</string>
-    <string name="usernameHint">username</string>
+    <string name="username">username</string>
     <string name="password">password</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="hello_blank_form">Ya me acostumbre</string>
-    <string name="eliminar">Eliminar</string>
+    <string name="eliminate">Delete</string>
+    <string name="eliminate_all">Delete all</string>
+    <string name="home">Home</string>
+    <string name="title">Title</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="description">Description</string>
+    <string name="home_bottom">Home</string>
+    <string name="form_bottom">Form</string>
+    <string name="list_bottom">List</string>
+    <string name="settings_toolbar">Settings</string>
+    <string name="logout_toolbar">Log out</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+    <string name="shared_eliminate">Eliminar Preferencias</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>
